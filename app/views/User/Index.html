@@ -1,0 +1,78 @@
+{{template "header.html" .}}
+
+<h1>Create a Login</h1>
+
+{{if .errors}}
+<div class="error">
+	<h2>Please correct the following errors:</h2>
+</div>
+{{end}}
+
+<form action="/User/HandleSubmit" method="POST">
+	<fieldset>
+		<legend>User Information</legend>
+
+
+    {{with $field := field "user.FirstName" .}}
+		<div class="field">
+			<label for="{{$field.Id}}">First name :</label>
+			<input type="text" id="{{$field.Id}}" name="{{$field.Name}}" value="{{$field.Flash}}" class="{{$field.ErrorClass}}"/>
+			<span class="error">{{$field.Error}}</span>
+		</div>
+		{{end}}
+
+    {{with $field := field "user.LastName" .}}
+		<div class="field">
+			<label for="{{$field.Id}}">Last name :</label>
+			<input type="text" id="{{$field.Id}}" name="{{$field.Name}}" value="{{$field.Flash}}" class="{{$field.ErrorClass}}"/>
+			<span class="error">{{$field.Error}}</span>
+		</div>
+		{{end}}
+
+
+	</fieldset>
+	<fieldset>
+		<legend>Password</legend>
+
+    {{with $field := field "user.Password" .}}
+		<div class="field">
+			<label for="{{$field.Id}}">Password :</label>
+			<input id="{{$field.Id}}" type="password" name="{{$field.Name}}" value="{{$field.Flash}}" class="{{$field.ErrorClass}}"/>
+			<span class="error">{{$field.Error}}</span>
+		</div>
+		{{end}}
+
+    {{with $field := field "user.PasswordConfirm" .}}
+		<div class="field">
+			<label for="{{$field.Id}}">Confirm password :</label>
+			<input id="{{$field.Id}}" type="password" name="{{$field.Name}}" value="{{$field.Flash}}" class="{{$field.ErrorClass}}"/>
+			<span class="error">{{$field.Error}}</span>
+		</div>
+		{{end}}
+
+	</fieldset>
+	<fieldset>
+		<legend>Email</legend>
+
+    {{with $field := field "user.Email" .}}
+		<div class="field">
+			<label for="{{$field.Id}}">Email address :</label>
+			<input id="{{$field.Id}}" type="text" name="{{$field.Name}}" value="{{$field.Flash}}" class="{{$field.ErrorClass}}"/>
+			<span class="error">{{$field.Error}}</span>
+		</div>
+		{{end}}
+
+    {{with $field := field "user.EmailConfirm" .}}
+		<div class="field">
+			<label for="{{$field.Id}}">Confirm email address :</label>
+			<input id="{{$field.Id}}" type="text" name="{{$field.Name}}" value="{{$field.Flash}}" class="{{$field.ErrorClass}}"/>
+			<span class="error">{{$field.Error}}</span>
+		</div>
+		{{end}}
+
+	</fieldset>
+
+	<input type="submit" class="submit" value="Join !" />
+</form>
+
+{{template "footer.html" .}}
