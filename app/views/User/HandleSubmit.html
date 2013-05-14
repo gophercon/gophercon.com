@@ -1,0 +1,21 @@
+{{template "header.html" .}}
+
+<h1>User {{.user.Email}} created!</h1>
+
+<p>
+	<strong>First name</strong> is {{.user.FirstName}}
+</p>
+<p>
+	<strong>Last name</strong> is {{.user.LastName}}
+</p>
+
+<p>
+	<strong>Password</strong> is {{.user.Password}}
+</p>
+<p>
+	<strong>Email</strong> is {{.user.Email}}
+</p>
+
+<a href="/User/Index">Back</a>
+
+{{template "footer.html" .}}

@@ -3,6 +3,13 @@
 # ~~~~
 
 GET     /                                       Application.Index
+GET			/user						User.Index
+GET  	/talks							Talks.Index
+GET		/talks/submit					Talks.Submit
+GET		/labs							Labs.Index
+GET		/labs/submit   					Labs.Submit
+GET		/sponsor						Sponsors.Index
+GET		/sponsor/submit 				Sponsors.Submit
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
