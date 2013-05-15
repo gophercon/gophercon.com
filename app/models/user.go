@@ -1,5 +1,6 @@
 package models
 
+/*
 import "github.com/robfig/revel"
 import "database/sql"
 import _ "github.com/go-sql-driver/mysql"
@@ -83,3 +84,4 @@ func (user *User) ValidatePassword(email, password string) (bool, error) {
 	return true, nil
 
 }
+*/
