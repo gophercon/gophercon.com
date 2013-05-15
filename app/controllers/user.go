@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"fmt"
 	"github.com/robfig/revel"
 	"gophercon.com/app/models"
 )
@@ -15,7 +14,7 @@ func (c User) Index() revel.Result {
 }
 
 func (c User) HandleSubmit(user *models.User) revel.Result {
-	user.Validate(c.Validation)
+/*	user.Validate(c.Validation)
 
 	// Handle errors
 	if c.Validation.HasErrors() {
@@ -28,7 +27,7 @@ func (c User) HandleSubmit(user *models.User) revel.Result {
 	err := user.Save()
 
 	fmt.Println(err)
-
+*/
 	// Ok, display the created user
 	return c.Render(user)
 }
