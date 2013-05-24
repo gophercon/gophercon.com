@@ -1,0 +1,32 @@
+/* ===== No Script Fallback ===== */
+
+/*#sliderWraper {
+	overflow: inherit !important;
+	margin: 0 auto;
+	clear: both;
+}
+
+	#slider {
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	#sliderWraper .prevPanel,
+	#sliderWraper .nextPanel {
+		display: none;
+	}
+	
+	#slider li > img {
+		margin-top: -600px;
+	    position: absolute;
+	    top: 50%;
+	    width: 100%;
+	}*/
+	
+.flexslider .slides {
+	height: 400px;
+}
+	
+	.flexslider .slides > li {
+		display: block;
+	}
