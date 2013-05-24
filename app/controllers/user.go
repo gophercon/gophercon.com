@@ -1,12 +1,9 @@
 package controllers
 
 import (
-<<<<<<< HEAD
-	//	"fmt"
-=======
->>>>>>> 5e297d1026dbf4a7819e5612d08d6e1b64d38c9a
+
 	"github.com/robfig/revel"
-	//"gophercon.com/app/models"
+
 )
 
 type User struct {
