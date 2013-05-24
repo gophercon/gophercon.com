@@ -1,9 +1,7 @@
 package controllers
 
 import (
-
 	"github.com/robfig/revel"
-
 )
 
 type User struct {
@@ -29,7 +27,7 @@ func (c User) HandleSubmit(user *models.User) revel.Result {
 	err := user.Save()
 
 	fmt.Println(err)
-*/
+
 	// Ok, display the created user
 	return c.Render(user)
 }
