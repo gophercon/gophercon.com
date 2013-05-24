@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"github.com/robfig/revel"
-	"gophercon.com/app/models"
 )
 
 type User struct {
@@ -13,6 +12,7 @@ func (c User) Index() revel.Result {
 	return c.Render()
 }
 
+/*
 func (c User) HandleSubmit(user *models.User) revel.Result {
 /*	user.Validate(c.Validation)
 
@@ -27,7 +27,8 @@ func (c User) HandleSubmit(user *models.User) revel.Result {
 	err := user.Save()
 
 	fmt.Println(err)
-*/
+
 	// Ok, display the created user
 	return c.Render(user)
 }
+*/
