@@ -1,12 +1,11 @@
 package models
 
-/*
-import "github.com/robfig/revel"
-import "database/sql"
-import _ "github.com/go-sql-driver/mysql"
-import "fmt"
-import "github.com/pmylund/go-hmaccrypt"
-import "crypto/sha512"
+//import "github.com/robfig/revel"
+//import "database/sql"
+//import _ "github.com/go-sql-driver/mysql"
+//import "fmt"
+//import "github.com/pmylund/go-hmaccrypt"
+//import "crypto/sha512"
 
 const Pepper = "99BottlesOfB33rOnTh3Wall98B0ttlesOfB33r"
 
@@ -19,7 +18,7 @@ type User struct {
 	Email           string
 	EmailConfirm    string
 }
-
+/*
 func (user *User) Validate(v *revel.Validation) {
 	v.Required(user.FirstName)
 	v.Required(user.LastName)
